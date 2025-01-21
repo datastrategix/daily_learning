@@ -17,3 +17,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* Style de l'en-tête */
+header {
+  padding: 10px 20px; /* Espace autour du titre */
+}
+
+header h1 {
+  color: #CE3326; /* Rouge */
+  font-size: 20px; /* Taille de la police */
+  font-family: Arial, sans-serif; /* Police lisible */
+  margin: 0; /* Supprime la marge par défaut */
+  text-align: left; /* Aligné à gauche */
+}
