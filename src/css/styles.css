@@ -23,8 +23,6 @@ body {
 /* Style de l'en-tête */
 header {
   padding: 10px; /* Espace autour du titre */
-  display: flex; /* Permet de mettre le titre et le sujet sur une ligne */
-  align-items: center; /* Alignement vertical centré */
 }
 
 header h1 {
@@ -32,20 +30,17 @@ header h1 {
   font-size: 20px; /* Taille de la police */
   font-family: Arial, sans-serif; /* Police lisible */
   margin: 0; /* Supprime la marge par défaut */
+  padding-bottom: 0px; /* Espacement avec le sujet */
   text-align: left; /* Aligné à gauche */
-  padding: 0; /* Supprime tout padding */
 }
 
-/* Sujet actuel */
-#current-sujet h2 {
-  color: #f4f1f0;
-  font-size: 14px; 
-  font-style: italic;
-  text-align: left; /* Aligné à gauche */
-  margin: 0; /* Supprime toutes les marges */
-  padding-left: 10px; /* Espacement horizontal par rapport au titre */
-  font-family: 'Roboto', Arial, sans-serif;
-  font-weight: 100; /* Retirer le gras */
+/* Style pour l'icône du titre */
+.title-icon {
+  width: 20px; /* Largeur égale à la hauteur du texte */
+  height: 20px; /* Hauteur fixe pour correspondre au texte */
+  vertical-align: middle; /* Aligner correctement avec le texte */
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
+  object-fit: contain; /* Gérer les proportions de l'image */
 }
 
 /* Icône de rafraîchissement */
@@ -53,7 +48,8 @@ header h1 {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  margin-left: auto; /* Aligne l'icône à droite */
+  float: right; /* Positionner l'icône à droite */
+  margin-right: 10px; /* Espacement par rapport au texte */
   transition: transform 0.3s ease;
 }
 
@@ -61,12 +57,24 @@ header h1 {
   transform: rotate(360deg); /* Animation de rotation sur hover */
 }
 
+/* Sujet actuel */
+#current-sujet h2 {
+  color: #f4f1f0;
+  font-size: 14px; 
+  text-align: left; /* Aligné à gauche */
+  margin-top: 0; /* Espacement avec le titre principal */
+  margin-bottom: 0; /* Pas d'espace sous le sujet */
+  margin-left: 50px; /* Alignement à gauche avec la bordure */
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 100; /* Retirer le gras */
+}
+
 /* Barre de navigation */
 nav {
   display: flex;
   justify-content: space-around; /* Répartir les boutons uniformément */
   flex-wrap: wrap; /* Permet de s'adapter si l'écran est trop petit */
-  padding: 10px 0; /* Réduction de l'espace vertical */
+  padding: 30px;
   width: 100%; /* Prendre toute la largeur */
   box-sizing: border-box;
 }
@@ -104,8 +112,9 @@ nav button:hover {
   font-family: Arial, sans-serif;
   color: white; /* Couleur du texte */
   line-height: 1.6; /* Espacement entre les lignes */
-  padding: 10px; /* Uniformiser les marges internes */
-  margin: 0; /* Supprime les marges autour des cartes */
+  padding: 1px 10px;
+  margin-top: 0; /* Même écart qu'entre la navigation et le sujet */
+  margin-bottom: 0; /* Pas d'espace sous la carte */
   overflow-y: auto; /* Défilement vertical si le texte dépasse */
   box-sizing: border-box; /* Inclure les bordures et le padding */
 }
