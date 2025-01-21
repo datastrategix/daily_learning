@@ -65,8 +65,8 @@ header h1 {
   margin-top: 0; /* Espacement avec le titre principal */
   margin-bottom: 0; /* Pas d'espace sous le sujet */
   margin-left: 40px; /* Alignement à gauche avec la bordure */
-  font-family: Arial, sans-serif;
-  font-weight: light; /* Retirer le gras */
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 100; /* Retirer le gras */
 }
 
 /* Barre de navigation */
