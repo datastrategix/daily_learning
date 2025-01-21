@@ -73,3 +73,20 @@ nav button.active {
 nav button:hover {
   color: white; /* Changer la couleur survolée */
 }
+
+/* Cartes de contenu */
+.card {
+  display: none; /* Toutes les cartes sont masquées par défaut */
+  text-align: center;
+  font-size: 18px;
+  color: white; /* Texte en blanc */
+  padding: 20px;
+}
+
+.card.active {
+  display: block; /* Seule la carte active est visible */
+}
+
+.hidden {
+  display: none; /* Classe utilisée pour masquer les cartes */
+}

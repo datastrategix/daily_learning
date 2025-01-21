@@ -17,12 +17,28 @@
 </header>
 
 <nav>
-  <button onclick="showCard('faitRapide')">Fait Rapide</button>
-  <button onclick="showCard('flashcard')">Flashcard</button>
+  <button onclick="showCard('apprentissage')">Apprentissage</button>
+  <button onclick="showCard('quiz')">Quiz</button>
   <button onclick="showCard('astuces')">Astuces</button>
   <button onclick="showCard('reflexion')">Réflexion</button>
-  <button onclick="showCard('aPropos')">À propos</button>
+  <button onclick="showCard('Propos')">À propos</button>
 </nav>
+
+<div id="apprentissage" class="card active">
+  <p>Voici un fait rapide sur votre entreprise !</p>
+</div>
+<div id="quiz" class="card hidden">
+  <p>Les données sont comme de l'or. Raffinez-les !</p>
+</div>
+<div id="astuces" class="card hidden">
+  <p>Sauvegardez vos données régulièrement.</p>
+</div>
+<div id="reflexion" class="card hidden">
+  <p>Quel serait votre potentiel si vous maîtrisiez vos données ?</p>
+</div>
+<div id="Propos" class="card hidden">
+  <p>Ce widget est conçu pour offrir des apprentissages quotidiens.</p>
+</div>
 
   <!-- La suite viendra ici -->
 
