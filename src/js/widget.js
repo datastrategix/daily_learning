@@ -2,17 +2,20 @@
 let currentIndex = 0; // Index du sujet actuel
 
 function afficherSujet() {
-  // Vérifie que la liste "sujets" est définie et accessible
+  // Vérifie que la liste "sujets" est bien définie
   if (typeof sujets !== "undefined" && sujets.length > 0) {
     const sujet = sujets[currentIndex];
     if (sujet) {
       // Mettre à jour le nom du sujet dans #current-sujet
       document.querySelector("#current-sujet h2").textContent = sujet.sujet;
+    } else {
+      console.error("Aucun sujet trouvé à l'index actuel.");
     }
   } else {
-    console.error("La liste des sujets est introuvable ou vide.");
+    console.error("La liste des sujets n'est pas disponible ou est vide.");
   }
 }
+
 
 function changerSujet() {
   // Passer au sujet suivant
