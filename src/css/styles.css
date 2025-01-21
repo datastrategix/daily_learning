@@ -102,8 +102,10 @@ nav button:hover {
 /* Cartes de contenu */
 .card {
   display: none; /* Toutes les cartes sont masquées par défaut */
-  text-align: center;
-  font-size: 18px;
+  text-align: jusitify;
+  font-family: Arial, sans-serif;
+  line-height: 1.5; /* Espacement entre les lignes pour une meilleure lisibilité */
+  font-size: 13px;
   color: white; /* Texte en blanc */
   padding: 20px;
 }
