@@ -22,7 +22,7 @@ body {
 
 /* Style de l'en-tête */
 header {
-  padding: 10px 20px; /* Espace autour du titre */
+  padding: 10px 10px; /* Espace autour du titre */
 }
 
 header h1 {
@@ -30,7 +30,7 @@ header h1 {
   font-size: 20px; /* Taille de la police */
   font-family: Arial, sans-serif; /* Police lisible */
   margin: 0; /* Supprime la marge par défaut */
-  padding-bottom: 5px; /* Espacement avec le sujet */
+  padding-bottom: 0px; /* Espacement avec le sujet */
   text-align: left; /* Aligné à gauche */
 }
 
@@ -60,7 +60,6 @@ header h1 {
 /* Sujet actuel */
 #current-sujet h2 {
   color: white;
-  font-style: italic;
   font-size: 14px; 
   text-align: left; /* Aligné à gauche */
   margin-top: 0; /* Espacement avec le titre principal */
@@ -75,7 +74,7 @@ nav {
   display: flex;
   justify-content: space-around; /* Répartir les boutons uniformément */
   flex-wrap: wrap; /* Permet de s'adapter si l'écran est trop petit */
-  padding: 10px 0;
+  padding: 10px 10px;
   width: 100%; /* Prendre toute la largeur */
   box-sizing: border-box;
 }
