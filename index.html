@@ -3,11 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Widget</title>
+  <title>Daily Learning Widget</title>
   <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
-  <div id="my-widget"></div>
-  <script src="src/js/widget.js"></script>
+  <div id="widget">
+    <nav>
+      <button onclick="showCard('quickFact')">Quick Fact</button>
+      <button onclick="showCard('flashcard')">Flashcard</button>
+      <button onclick="showCard('tips')">Tips & Tricks</button>
+      <button onclick="showCard('foodForThought')">Food for Thought</button>
+      <button onclick="showCard('about')">About</button>
+    </nav>
+    <div id="content">
+      <div id="quickFact" class="card active">
+        <h1>Quick Fact</h1>
+        <p>Did you know that up to 70% of small businesses face challenges with data quality?</p>
+      </div>
+      <div id="flashcard" class="card hidden">
+        <h1>Flashcard</h1>
+        <p>Data is the new oil. Make sure to refine it!</p>
+      </div>
+      <div id="tips" class="card hidden">
+        <h1>Tips & Tricks</h1>
+        <p>Backup your data regularly to avoid unexpected losses.</p>
+      </div>
+      <div id="foodForThought" class="card hidden">
+        <h1>Food for Thought</h1>
+        <p>What would your business achieve if you mastered your data?</p>
+      </div>
+      <div id="about" class="card hidden">
+        <h1>About</h1>
+        <p>This widget is designed to deliver daily learning insights for SMEs.</p>
+      </div>
+    </div>
+    <script src="src/js/widget.js"></script>
+  </div>
 </body>
 </html>

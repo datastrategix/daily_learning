@@ -1,7 +1,57 @@
-#my-widget {
-  width: 300px;
-  border: 2px solid #ff4500;
-  border-radius: 10px;
-  padding: 10px;
+/* Structure principale */
+#widget {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
+}
+
+/* Barre de navigation */
+nav {
+  display: flex;
+  background-color: #CE3326;
+  justify-content: space-around;
+  padding: 15px 0;
+  color: white;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+nav button:hover,
+nav button:focus {
+  border-color: white;
+}
+
+/* Cards */
+.card {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  padding: 20px;
+  color: #333;
+}
+
+.card.active {
+  display: flex;
+}
+
+h1 {
+  color: #CE3326;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
 }
