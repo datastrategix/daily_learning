@@ -1,78 +1,19 @@
-/* Structure principale */
+/* Suppression des marges et réglage du fond de la page */
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
-  overflow: hidden;
+  background-color: black; /* Couleur de fond */
+  overflow: hidden; /* Pas de scroll */
 }
 
+/* Conteneur principal du widget */
 #widget {
-  width: calc(100vw - 10px); /* Réduction pour la bordure */
-  height: calc(100vh - 10px);
-  margin: 5px; /* Espacement pour la bordure */
-  border: 5px solid #CE3326;
-  border-radius: 20px;
+  width: calc(100vw - 10px); /* Largeur totale moins la bordure */
+  height: calc(100vh - 10px); /* Hauteur totale moins la bordure */
+  margin: 5px; /* Pour inclure la bordure */
+  border: 5px solid #CE3326; /* Bordure rouge */
+  border-radius: 20px; /* Bordure arrondie */
+  box-sizing: border-box; /* Inclure les bordures dans les dimensions */
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  color: white;
-}
-
-/* Header */
-header {
-  text-align: center;
-  padding: 10px 0;
-  font-size: 24px;
-  color: #CE3326;
-}
-
-/* Barre de navigation */
-nav {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-}
-
-nav button {
-  background: none;
-  border: none;
-  color: #CE3326;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 5px 10px;
-  transition: color 0.3s;
-}
-
-nav button:hover,
-nav button:focus {
-  color: white;
-}
-
-/* Cards */
-#content {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card {
-  display: none;
-  text-align: center;
-  font-size: 18px;
-  padding: 20px;
-}
-
-.card.active {
-  display: block;
-}
-
-.hidden {
-  display: none;
-}
-
-/* Texte */
-p {
-  margin: 0;
-  line-height: 1.6;
 }
