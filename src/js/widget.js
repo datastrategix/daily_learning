@@ -20,10 +20,19 @@ function afficherSujet() {
 function changerSujet() {
   // Passer au sujet suivant
   if (typeof sujets !== "undefined" && sujets.length > 0) {
-    currentIndex = (currentIndex + 1) % sujets.length; // Boucle sur les sujets
-    afficherSujet(); // Mettre à jour l'affichage
+    currentIndex = (currentIndex + 1) % sujets.length; // Boucler sur les sujets
+    afficherSujet(); // Mettre à jour l'affichage du sujet
+
+    // Mettre à jour le contenu de la carte active
+    const sujet = sujets[currentIndex];
+    if (sujet) {
+      document.querySelector("#apprentissage p").textContent = sujet.saviezVous; // Mise à jour du contenu de "Apprentissage"
+      document.querySelector("#astuces p").textContent = sujet.astuce; // Mise à jour du contenu de "Astuces"
+      document.querySelector("#reflexion p").textContent = sujet.reflexion; // Mise à jour du contenu de "Réflexion"
+    }
   }
 }
+
 
 function showCard(cardId) {
   // 1. Mettre à jour l'état actif sur les onglets
