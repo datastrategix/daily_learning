@@ -54,17 +54,17 @@ header h1 {
 }
 
 .refresh-icon:hover {
-  transform: rotate(90deg); /* Animation de rotation sur hover */
+  transform: rotate(360deg); /* Animation de rotation sur hover */
 }
 
 /* Sujet actuel */
 #current-sujet h2 {
   color: white;
-  font-size: 13px; 
+  font-size: 15px; 
   text-align: left; /* Aligné à gauche */
-  margin-top: 5px; /* Espacement avec le titre principal */
+  margin-top: 0; /* Espacement avec le titre principal */
   margin-bottom: 0; /* Pas d'espace sous le sujet */
-  margin-left: 0; /* Alignement à gauche avec la bordure */
+  margin-left: 10px; /* Alignement à gauche avec la bordure */
   font-family: Arial, sans-serif;
   font-weight: normal; /* Retirer le gras */
 }
@@ -109,10 +109,11 @@ nav button:hover {
   display: none; /* Par défaut, les cartes sont masquées */
   text-align: justify; /* Justification du texte */
   font-size: 18px; /* Taille de la police */
+  font-family: Arial, sans-serif;
   color: white; /* Couleur du texte */
   line-height: 1.6; /* Espacement entre les lignes */
-  padding: 10px 20px; /* Espacement interne pour une lecture confortable */
-  margin-top: 5px; /* Même écart qu'entre la navigation et le sujet */
+  padding: 10px 5px; /* Espacement interne pour une lecture confortable */
+  margin-top: 0; /* Même écart qu'entre la navigation et le sujet */
   margin-bottom: 0; /* Pas d'espace sous la carte */
   overflow-y: auto; /* Défilement vertical si le texte dépasse */
   box-sizing: border-box; /* Inclure les bordures et le padding */
