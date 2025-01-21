@@ -1,12 +1,12 @@
 # My Widget Project
 
 ## Description
-Un widget interactif simple pour afficher des faits rapides, des flashcards, et plus.
+Un widget interactif simple pour afficher des apprentissages, astuces et réflexions.
 
 ## Installation
 1. Clonez ce dépôt :
    ```
-   git clone https://github.com/votre-utilisateur/widget-project.git
+   git clone https://github.com/votre-utilisateur/daily_learning.git
    ```
 2. Ouvrez `index.html` dans votre navigateur.
 
