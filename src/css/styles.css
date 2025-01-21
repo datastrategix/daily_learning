@@ -57,9 +57,11 @@ header h1 {
 /* Sujet actuel */
 #current-sujet h2 {
   color: white;
-  font-size: 10px; /* Deux fois plus petit que le titre principal (20px) */
+  font-size: 13px; 
   text-align: left; /* Aligné à gauche */
-  margin: 10px 20px; /* Espacement par rapport aux bords */
+  margin-top: 5px; 
+  margin-bottom: 0; 
+  margin-left: 0; 
   font-family: Arial, sans-serif;
   font-weight: normal; /* Retirer le gras */
 }
