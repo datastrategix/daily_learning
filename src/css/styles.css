@@ -22,7 +22,7 @@ body {
 
 /* Style de l'en-tête */
 header {
-  padding: 10px 10px; /* Espace autour du titre */
+  padding: 10px; /* Espace autour du titre */
 }
 
 header h1 {
@@ -59,14 +59,14 @@ header h1 {
 
 /* Sujet actuel */
 #current-sujet h2 {
-  color: white;
+  color: #f4f1f0;
   font-size: 14px; 
   text-align: left; /* Aligné à gauche */
   margin-top: 0; /* Espacement avec le titre principal */
   margin-bottom: 0; /* Pas d'espace sous le sujet */
-  margin-left: 20px; /* Alignement à gauche avec la bordure */
+  margin-left: 40px; /* Alignement à gauche avec la bordure */
   font-family: Arial, sans-serif;
-  font-weight: 300; /* Retirer le gras */
+  font-weight: light; /* Retirer le gras */
 }
 
 /* Barre de navigation */
@@ -74,7 +74,7 @@ nav {
   display: flex;
   justify-content: space-around; /* Répartir les boutons uniformément */
   flex-wrap: wrap; /* Permet de s'adapter si l'écran est trop petit */
-  padding: 10px 10px;
+  padding: 30px;
   width: 100%; /* Prendre toute la largeur */
   box-sizing: border-box;
 }
