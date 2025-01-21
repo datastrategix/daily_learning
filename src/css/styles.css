@@ -22,7 +22,7 @@ body {
 
 /* Style de l'en-tête */
 header {
-  padding: 10px; /* Espace autour du titre */
+  padding: 5px; /* Espace autour du titre */
 }
 
 header h1 {
@@ -64,7 +64,7 @@ header h1 {
   text-align: left; /* Aligné à gauche */
   margin-top: 0; /* Espacement avec le titre principal */
   margin-bottom: 0; /* Pas d'espace sous le sujet */
-  margin-left: 50px; /* Alignement à gauche avec la bordure */
+  margin-left: 40px; /* Alignement à gauche avec la bordure */
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 100; /* Retirer le gras */
 }
@@ -87,7 +87,7 @@ nav button {
   font-size: 16px;
   font-family: Arial, sans-serif;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 5px;
   transition: all 0.3s ease; /* Animation fluide sur les changements */
 }
 
@@ -112,7 +112,7 @@ nav button:hover {
   font-family: Arial, sans-serif;
   color: white; /* Couleur du texte */
   line-height: 1.6; /* Espacement entre les lignes */
-  padding: 1px 10px;
+  padding: 10px;
   margin-top: 0; /* Même écart qu'entre la navigation et le sujet */
   margin-bottom: 0; /* Pas d'espace sous la carte */
   overflow-y: auto; /* Défilement vertical si le texte dépasse */
