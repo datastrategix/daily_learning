@@ -40,6 +40,30 @@ header h1 {
   object-fit: contain; /* Gérer les proportions de l'image */
 }
 
+/* Icône de rafraîchissement */
+.refresh-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  float: right; /* Positionner l'icône à droite */
+  margin-right: 10px; /* Espacement par rapport au texte */
+  transition: transform 0.3s ease;
+}
+
+.refresh-icon:hover {
+  transform: rotate(90deg); /* Animation de rotation sur hover */
+}
+
+/* Sujet actuel */
+#current-sujet h2 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+
 /* Barre de navigation */
 nav {
   display: flex;

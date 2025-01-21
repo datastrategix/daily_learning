@@ -24,3 +24,21 @@ function showCard(cardId) {
   }
 }
 
+let currentIndex = 0; // Index du sujet actuel
+
+function afficherSujet() {
+  // Récupérer le sujet actuel
+  const sujet = sujets[currentIndex];
+  // Mettre à jour le titre du sujet
+  document.querySelector("#current-sujet h2").textContent = sujet.sujet;
+}
+
+function changerSujet() {
+  // Passer au sujet suivant
+  currentIndex = (currentIndex + 1) % sujets.length; // Boucle sur les sujets
+  afficherSujet(); // Mettre à jour l'affichage
+}
+
+// Initialiser le premier sujet au chargement
+document.addEventListener("DOMContentLoaded", afficherSujet);
+
