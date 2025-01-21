@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black; /* Couleur de fond */
-  overflow: hidden; /* Pas de scroll */
+  overflow: hidden; /* Pas de scroll global */
 }
 
 /* Conteneur principal du widget */
@@ -16,6 +16,8 @@ body {
   box-sizing: border-box; /* Inclure les bordures dans les dimensions */
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Répartit les sections verticalement */
+  overflow: hidden; /* Empêche les débordements */
 }
 
 /* Style de l'en-tête */
@@ -28,6 +30,7 @@ header h1 {
   font-size: 20px; /* Taille de la police */
   font-family: Arial, sans-serif; /* Police lisible */
   margin: 0; /* Supprime la marge par défaut */
+  padding-bottom: 5px; /* Espacement avec le sujet */
   text-align: left; /* Aligné à gauche */
 }
 
@@ -59,13 +62,12 @@ header h1 {
   color: white;
   font-size: 13px; 
   text-align: left; /* Aligné à gauche */
-  margin-top: 5px; 
-  margin-bottom: 0; 
-  margin-left: 0; 
+  margin-top: 5px; /* Espacement avec le titre principal */
+  margin-bottom: 0; /* Pas d'espace sous le sujet */
+  margin-left: 0; /* Alignement à gauche avec la bordure */
   font-family: Arial, sans-serif;
   font-weight: normal; /* Retirer le gras */
 }
-
 
 /* Barre de navigation */
 nav {
@@ -103,13 +105,17 @@ nav button:hover {
 
 /* Cartes de contenu */
 .card {
-  display: none; /* Toutes les cartes sont masquées par défaut */
-  text-align: jusitify;
-  font-family: Arial, sans-serif;
-  line-height: 1.5; /* Espacement entre les lignes pour une meilleure lisibilité */
-  font-size: 13px;
-  color: white; /* Texte en blanc */
-  padding: 20px;
+  flex: 1; /* Étend les cartes pour occuper tout l'espace disponible */
+  display: none; /* Par défaut, les cartes sont masquées */
+  text-align: justify; /* Justification du texte */
+  font-size: 18px; /* Taille de la police */
+  color: white; /* Couleur du texte */
+  line-height: 1.6; /* Espacement entre les lignes */
+  padding: 10px 20px; /* Espacement interne pour une lecture confortable */
+  margin-top: 5px; /* Même écart qu'entre la navigation et le sujet */
+  margin-bottom: 0; /* Pas d'espace sous la carte */
+  overflow-y: auto; /* Défilement vertical si le texte dépasse */
+  box-sizing: border-box; /* Inclure les bordures et le padding */
 }
 
 .card.active {
