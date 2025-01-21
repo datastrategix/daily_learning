@@ -30,3 +30,11 @@ header h1 {
   margin: 0; /* Supprime la marge par défaut */
   text-align: left; /* Aligné à gauche */
 }
+
+/* Style pour l'icône du titre */
+.title-icon {
+  width: 20px; /* Même hauteur que le texte (20px) */
+  height: 20px; /* Proportionnel à la largeur */
+  vertical-align: middle; /* Aligne l'icône avec le texte */
+  margin-right: 10px; /* Espace entre l'icône et le texte */
+}
