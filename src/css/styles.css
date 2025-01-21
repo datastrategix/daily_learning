@@ -33,8 +33,9 @@ header h1 {
 
 /* Style pour l'icône du titre */
 .title-icon {
-  width: 20px; /* Même hauteur que le texte (20px) */
-  height: 20px; /* Proportionnel à la largeur */
-  vertical-align: middle; /* Aligne l'icône avec le texte */
-  margin-right: 10px; /* Espace entre l'icône et le texte */
+  width: 20px; /* Largeur égale à la hauteur du texte */
+  height: 20px; /* Hauteur fixe pour correspondre au texte */
+  vertical-align: middle; /* Aligner correctement avec le texte */
+  margin-right: 10px; /* Espacement entre l'icône et le texte */
+  object-fit: contain; /* Gérer les proportions de l'image */
 }
