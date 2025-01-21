@@ -9,41 +9,41 @@
 <body>
   <div id="widget">
 
-<header>
-  <h1>
-    <img src="https://icon-icons.com/icons2/1689/PNG/96/3925430-glass-magnifying-magnifying-glass-search-icon_111561.png" alt="Icon" class="title-icon">
-    Daily Learning
-    <img src="https://icon-icons.com/icons2/2098/PNG/96/refresh_icon_128955.png" alt="Refresh Icon" class="refresh-icon" onclick="changerSujet()">
-  </h1>
-</header>
+    <header>
+      <h1>
+        <img src="https://icon-icons.com/icons2/1689/PNG/96/3925430-glass-magnifying-magnifying-glass-search-icon_111561.png" alt="Icon" class="title-icon">
+        Daily Learning
+        <img src="https://icon-icons.com/icons2/2098/PNG/96/refresh_icon_128955.png" alt="Refresh Icon" class="refresh-icon" onclick="changerSujet()">
+      </h1>
+    </header>
 
-<div id="current-sujet">
-  <h2></h2>
-</div>
+    <!-- Sujet actuel -->
+    <div id="current-sujet">
+      <h2></h2>
+    </div>
 
-<script src="src/js/data.js"></script>
-<script src="src/js/widget.js"></script>
+    <nav>
+      <button onclick="showCard('apprentissage')">Apprentissage</button>
+      <button onclick="showCard('astuces')">Astuces</button>
+      <button onclick="showCard('reflexion')">Réflexion</button>
+    </nav>
 
-
-<nav>
-  <button onclick="showCard('apprentissage')">Apprentissage</button>
-  <button onclick="showCard('astuces')">Astuces</button>
-  <button onclick="showCard('reflexion')">Réflexion</button>
-</nav>
-
-<div id="apprentissage" class="card active">
-  <p>Voici un fait rapide sur votre entreprise !</p>
-</div>
-</div>
-<div id="astuces" class="card hidden">
-  <p>Sauvegardez vos données régulièrement.</p>
-</div>
-<div id="reflexion" class="card hidden">
-  <p>Quel serait votre potentiel si vous maîtrisiez vos données ?</p>
-</div>
-
-  <!-- La suite viendra ici -->
+    <!-- Cartes de contenu -->
+    <div id="apprentissage" class="card active">
+      <p>Voici un fait rapide sur votre entreprise !</p>
+    </div>
+    <div id="astuces" class="card hidden">
+      <p>Sauvegardez vos données régulièrement.</p>
+    </div>
+    <div id="reflexion" class="card hidden">
+      <p>Quel serait votre potentiel si vous maîtrisiez vos données ?</p>
+    </div>
 
   </div>
+
+  <!-- Scripts -->
+  <script src="src/js/data.js"></script>
+  <script src="src/js/widget.js"></script>
+
 </body>
 </html>
